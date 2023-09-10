@@ -1,0 +1,85 @@
+
+:root{
+    --bg-color: white;
+    --text-color: black;
+}
+
+.darkmode{
+    --bg-color: rgb(9, 8, 20);
+    --text-color: white;
+    transition: 0.35s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    
+ }
+
+
+.align-center{
+    align-items: center;
+}
+
+
+.justify-center{
+    justify-content: center;
+}
+
+#wrapper{
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#wrapper h2{
+    font-size: 50px;
+    margin-right: 20px;
+    color: var(--text-color);
+}
+
+#wrapper button{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: none;
+}
+
+#wrapper button span{
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.30s;
+}
+
+#wrapper button .sun{
+    background-color: rgb(241, 182, 20);
+}
+
+#wrapper button .moon{
+    background-color: rgb(9, 8, 20);
+    color: white;
+}
+
+.cursor{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;     
+    background-color: burlywood;
+}
